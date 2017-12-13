@@ -24,7 +24,7 @@ Partial Class MainMenu
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnFalldown = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnTicTacToe = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -33,58 +33,64 @@ Partial Class MainMenu
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(57, 9)
+        Me.Label1.Location = New System.Drawing.Point(86, 14)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(166, 24)
+        Me.Label1.Size = New System.Drawing.Size(249, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Choose a Game!"
         '
         'btnFalldown
         '
-        Me.btnFalldown.Location = New System.Drawing.Point(84, 36)
+        Me.btnFalldown.Location = New System.Drawing.Point(126, 55)
+        Me.btnFalldown.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnFalldown.Name = "btnFalldown"
-        Me.btnFalldown.Size = New System.Drawing.Size(107, 23)
+        Me.btnFalldown.Size = New System.Drawing.Size(160, 35)
         Me.btnFalldown.TabIndex = 1
         Me.btnFalldown.Text = "Falldown"
         Me.btnFalldown.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnTicTacToe
         '
-        Me.Button2.Location = New System.Drawing.Point(84, 65)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(107, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnTicTacToe.Location = New System.Drawing.Point(126, 100)
+        Me.btnTicTacToe.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnTicTacToe.Name = "btnTicTacToe"
+        Me.btnTicTacToe.Size = New System.Drawing.Size(160, 35)
+        Me.btnTicTacToe.TabIndex = 2
+        Me.btnTicTacToe.Text = "Tic-Tac-Toe"
+        Me.btnTicTacToe.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(84, 94)
+        Me.Button3.Location = New System.Drawing.Point(126, 145)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(107, 23)
+        Me.Button3.Size = New System.Drawing.Size(160, 35)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(99, 123)
+        Me.btnExit.Location = New System.Drawing.Point(148, 189)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(80, 23)
+        Me.btnExit.Size = New System.Drawing.Size(120, 35)
         Me.btnExit.TabIndex = 4
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'MainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(426, 403)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnTicTacToe)
         Me.Controls.Add(Me.btnFalldown)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "MainMenu"
         Me.Text = "Final Program Menu"
         Me.ResumeLayout(False)
@@ -93,7 +99,7 @@ Partial Class MainMenu
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnFalldown As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnTicTacToe As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
 
