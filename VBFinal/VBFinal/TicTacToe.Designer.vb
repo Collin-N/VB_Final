@@ -238,7 +238,7 @@ Partial Class TicTacToe
         Me.Controls.Add(Me.btn2)
         Me.Controls.Add(Me.btn1)
         Me.Name = "TicTacToe"
-        Me.Text = "TicTacToe"
+        Me.Text = "Tic-Tac-Toe"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
