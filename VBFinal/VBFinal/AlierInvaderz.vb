@@ -114,8 +114,7 @@
         For Me.x = 1 To NumOfInvaders
             If Invaderz(x).Top + Invaderz(x).Height >= picTank.Top And (Invaderz(x).Visible = True) Then
                 TimerMain.Enabled = False
-                MessageBox.Show("GAME OVER - Earth was Invaded!!!
-            Mission Failed Soldier.")
+                MessageBox.Show("GAME OVER - Earth was Invaded!!! Mission Failed Soldier.")
             End If
         Next
         If ShotDown = NumOfInvaders Then
