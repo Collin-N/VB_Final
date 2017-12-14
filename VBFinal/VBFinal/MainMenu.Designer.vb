@@ -23,7 +23,7 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnFalldown = New System.Windows.Forms.Button()
+        Me.btnInvaderz = New System.Windows.Forms.Button()
         Me.btnTicTacToe = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -40,15 +40,15 @@ Partial Class MainMenu
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Choose a Game!"
         '
-        'btnFalldown
+        'btnInvaderz
         '
-        Me.btnFalldown.Location = New System.Drawing.Point(126, 55)
-        Me.btnFalldown.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnFalldown.Name = "btnFalldown"
-        Me.btnFalldown.Size = New System.Drawing.Size(160, 35)
-        Me.btnFalldown.TabIndex = 1
-        Me.btnFalldown.Text = "Falldown"
-        Me.btnFalldown.UseVisualStyleBackColor = True
+        Me.btnInvaderz.Location = New System.Drawing.Point(126, 55)
+        Me.btnInvaderz.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnInvaderz.Name = "btnInvaderz"
+        Me.btnInvaderz.Size = New System.Drawing.Size(160, 35)
+        Me.btnInvaderz.TabIndex = 1
+        Me.btnInvaderz.Text = "Alien Invaderz"
+        Me.btnInvaderz.UseVisualStyleBackColor = True
         '
         'btnTicTacToe
         '
@@ -88,7 +88,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.btnTicTacToe)
-        Me.Controls.Add(Me.btnFalldown)
+        Me.Controls.Add(Me.btnInvaderz)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "MainMenu"
@@ -98,7 +98,7 @@ Partial Class MainMenu
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents btnFalldown As System.Windows.Forms.Button
+    Friend WithEvents btnInvaderz As System.Windows.Forms.Button
     Friend WithEvents btnTicTacToe As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
