@@ -70,10 +70,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Falldown.Designer.vb">
-      <DependentUpon>Falldown.vb</DependentUpon>
+    <Compile Include="AlierInvaderz.Designer.vb">
+      <DependentUpon>AlierInvaderz.vb</DependentUpon>
     </Compile>
-    <Compile Include="Falldown.vb">
+    <Compile Include="AlierInvaderz.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.vb">
@@ -106,8 +106,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Falldown.resx">
-      <DependentUpon>Falldown.vb</DependentUpon>
+    <EmbeddedResource Include="AlierInvaderz.resx">
+      <DependentUpon>AlierInvaderz.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
