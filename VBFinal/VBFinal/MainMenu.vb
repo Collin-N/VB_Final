@@ -13,4 +13,9 @@
         Dim box = New AlienInvaderz()
         box.Show()
     End Sub
+
+    Private Sub btnHorseRacing_Click(sender As Object, e As EventArgs) Handles btnHorseRacing.Click
+        Dim box = New
+        CheckBox.Show()
+    End Sub
 End Class

@@ -76,6 +76,12 @@
     <Compile Include="AlierInvaderz.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HorseRacing.Designer.vb">
+      <DependentUpon>HorseRacing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HorseRacing.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AlierInvaderz.resx">
       <DependentUpon>AlierInvaderz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorseRacing.resx">
+      <DependentUpon>HorseRacing.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
