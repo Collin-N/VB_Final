@@ -27,6 +27,7 @@ Partial Class MainMenu
         Me.btnTicTacToe = New System.Windows.Forms.Button()
         Me.btnHorseRacing = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnPlatformer = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -68,18 +69,28 @@ Partial Class MainMenu
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(99, 123)
+        Me.btnExit.Location = New System.Drawing.Point(97, 152)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(80, 23)
         Me.btnExit.TabIndex = 4
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'btnPlatformer
+        '
+        Me.btnPlatformer.Location = New System.Drawing.Point(84, 123)
+        Me.btnPlatformer.Name = "btnPlatformer"
+        Me.btnPlatformer.Size = New System.Drawing.Size(107, 23)
+        Me.btnPlatformer.TabIndex = 5
+        Me.btnPlatformer.Text = "Platformer Game"
+        Me.btnPlatformer.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(284, 214)
+        Me.Controls.Add(Me.btnPlatformer)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnHorseRacing)
         Me.Controls.Add(Me.btnTicTacToe)
@@ -96,5 +107,6 @@ Partial Class MainMenu
     Friend WithEvents btnTicTacToe As System.Windows.Forms.Button
     Friend WithEvents btnHorseRacing As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnPlatformer As System.Windows.Forms.Button
 
 End Class

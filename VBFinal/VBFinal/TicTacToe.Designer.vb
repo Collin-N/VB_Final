@@ -190,7 +190,7 @@ Partial Class TicTacToe
         '
         'btnRestart
         '
-        Me.btnRestart.Location = New System.Drawing.Point(8, 274)
+        Me.btnRestart.Location = New System.Drawing.Point(11, 274)
         Me.btnRestart.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRestart.Name = "btnRestart"
         Me.btnRestart.Size = New System.Drawing.Size(401, 23)
@@ -240,11 +240,12 @@ Partial Class TicTacToe
         '
         'btnPlay
         '
-        Me.btnPlay.Location = New System.Drawing.Point(80, 79)
+        Me.btnPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPlay.Location = New System.Drawing.Point(80, 90)
         Me.btnPlay.Name = "btnPlay"
-        Me.btnPlay.Size = New System.Drawing.Size(238, 110)
+        Me.btnPlay.Size = New System.Drawing.Size(222, 100)
         Me.btnPlay.TabIndex = 16
-        Me.btnPlay.Text = "Play"
+        Me.btnPlay.Text = "Play!"
         Me.btnPlay.UseVisualStyleBackColor = True
         '
         'TicTacToe

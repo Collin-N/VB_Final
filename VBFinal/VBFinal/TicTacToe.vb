@@ -28,6 +28,8 @@
 
         btn9.Text = ""
         btn9.Enabled = True
+
+
     End Sub
 
     Private Sub btnNewGame_Click(sender As Object, e As EventArgs) Handles btnNewGame.Click
@@ -63,16 +65,13 @@
         lblWinsX.Text = ""
         lblWinsO.Text = ""
 
+
     End Sub
+    Private Sub btnPlay_Click_1(sender As Object, e As EventArgs) Handles btnPlay.Click
+        do While userChoice != ComputerChoice And Quit = numChosen
+            numChosen = +1
 
 
-    Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click, btn1_click(sender As Object, e As EventArgs) Handles  btn1.Click, btn2.Click, btn3.Click, btn4.Click, btn5.Click, btn6.Click, btn7.Click, btn8.Click, btn9.Click
-        If lblTurn.Text = "X" Then
-            btn1.Text, btn2.Text, btn3.Text, btn4.Text, btn5.Text, btn6.Text, btn7.Text, btn8.Text, btn9.Text = "X"
-            lblTurn.Text = "O"
-        Else
-            btn1.Text, btn2.Text, btn3.Text, btn4.Text, btn5.Text, btn6.Text, btn7.Text, btn8.Text, btn9.Text = "O"
-            lblTurn.Text = "X"
-        End If
+
     End Sub
 End Class
