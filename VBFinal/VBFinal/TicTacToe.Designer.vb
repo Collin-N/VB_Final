@@ -241,7 +241,7 @@ Partial Class TicTacToe
         'btnPlay
         '
         Me.btnPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPlay.Location = New System.Drawing.Point(80, 90)
+        Me.btnPlay.Location = New System.Drawing.Point(95, 91)
         Me.btnPlay.Name = "btnPlay"
         Me.btnPlay.Size = New System.Drawing.Size(222, 100)
         Me.btnPlay.TabIndex = 16
@@ -252,6 +252,7 @@ Partial Class TicTacToe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Red
         Me.ClientSize = New System.Drawing.Size(417, 329)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.Label4)

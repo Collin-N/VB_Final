@@ -37,6 +37,11 @@ Partial Class AlienInvaderz
         Me.picInvader8 = New System.Windows.Forms.PictureBox()
         Me.picInvader9 = New System.Windows.Forms.PictureBox()
         Me.picInvader10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblScore = New System.Windows.Forms.Label()
         CType(Me.picTank, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMissile, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInvader1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,14 +54,18 @@ Partial Class AlienInvaderz
         CType(Me.picInvader8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInvader9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInvader10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picTank
         '
-        Me.picTank.BackColor = System.Drawing.Color.Transparent
+        Me.picTank.BackColor = System.Drawing.Color.Black
+        Me.picTank.BackgroundImage = CType(resources.GetObject("picTank.BackgroundImage"), System.Drawing.Image)
         Me.picTank.Image = CType(resources.GetObject("picTank.Image"), System.Drawing.Image)
-        Me.picTank.Location = New System.Drawing.Point(0, 294)
-        Me.picTank.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picTank.Location = New System.Drawing.Point(0, 303)
+        Me.picTank.Margin = New System.Windows.Forms.Padding(2)
         Me.picTank.Name = "picTank"
         Me.picTank.Size = New System.Drawing.Size(115, 77)
         Me.picTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -70,10 +79,11 @@ Partial Class AlienInvaderz
         '
         'picMissile
         '
-        Me.picMissile.BackColor = System.Drawing.Color.Transparent
+        Me.picMissile.BackColor = System.Drawing.Color.Black
+        Me.picMissile.BackgroundImage = CType(resources.GetObject("picMissile.BackgroundImage"), System.Drawing.Image)
         Me.picMissile.Image = CType(resources.GetObject("picMissile.Image"), System.Drawing.Image)
-        Me.picMissile.Location = New System.Drawing.Point(43, 241)
-        Me.picMissile.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picMissile.Location = New System.Drawing.Point(34, 240)
+        Me.picMissile.Margin = New System.Windows.Forms.Padding(2)
         Me.picMissile.Name = "picMissile"
         Me.picMissile.Size = New System.Drawing.Size(20, 49)
         Me.picMissile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -82,10 +92,11 @@ Partial Class AlienInvaderz
         '
         'picInvader1
         '
-        Me.picInvader1.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader1.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader1.BackgroundImage = CType(resources.GetObject("picInvader1.BackgroundImage"), System.Drawing.Image)
         Me.picInvader1.Image = CType(resources.GetObject("picInvader1.Image"), System.Drawing.Image)
         Me.picInvader1.Location = New System.Drawing.Point(1, 1)
-        Me.picInvader1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader1.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader1.Name = "picInvader1"
         Me.picInvader1.Size = New System.Drawing.Size(53, 52)
         Me.picInvader1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -94,10 +105,11 @@ Partial Class AlienInvaderz
         '
         'picInvader2
         '
-        Me.picInvader2.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader2.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader2.BackgroundImage = CType(resources.GetObject("picInvader2.BackgroundImage"), System.Drawing.Image)
         Me.picInvader2.Image = CType(resources.GetObject("picInvader2.Image"), System.Drawing.Image)
         Me.picInvader2.Location = New System.Drawing.Point(58, 1)
-        Me.picInvader2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader2.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader2.Name = "picInvader2"
         Me.picInvader2.Size = New System.Drawing.Size(53, 52)
         Me.picInvader2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -106,10 +118,11 @@ Partial Class AlienInvaderz
         '
         'picInvader3
         '
-        Me.picInvader3.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader3.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader3.BackgroundImage = CType(resources.GetObject("picInvader3.BackgroundImage"), System.Drawing.Image)
         Me.picInvader3.Image = CType(resources.GetObject("picInvader3.Image"), System.Drawing.Image)
         Me.picInvader3.Location = New System.Drawing.Point(115, 1)
-        Me.picInvader3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader3.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader3.Name = "picInvader3"
         Me.picInvader3.Size = New System.Drawing.Size(53, 52)
         Me.picInvader3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -118,10 +131,11 @@ Partial Class AlienInvaderz
         '
         'picInvader4
         '
-        Me.picInvader4.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader4.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader4.BackgroundImage = CType(resources.GetObject("picInvader4.BackgroundImage"), System.Drawing.Image)
         Me.picInvader4.Image = CType(resources.GetObject("picInvader4.Image"), System.Drawing.Image)
         Me.picInvader4.Location = New System.Drawing.Point(173, 1)
-        Me.picInvader4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader4.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader4.Name = "picInvader4"
         Me.picInvader4.Size = New System.Drawing.Size(53, 52)
         Me.picInvader4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -130,10 +144,11 @@ Partial Class AlienInvaderz
         '
         'picInvader5
         '
-        Me.picInvader5.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader5.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader5.BackgroundImage = CType(resources.GetObject("picInvader5.BackgroundImage"), System.Drawing.Image)
         Me.picInvader5.Image = CType(resources.GetObject("picInvader5.Image"), System.Drawing.Image)
         Me.picInvader5.Location = New System.Drawing.Point(230, 1)
-        Me.picInvader5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader5.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader5.Name = "picInvader5"
         Me.picInvader5.Size = New System.Drawing.Size(53, 52)
         Me.picInvader5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -142,10 +157,11 @@ Partial Class AlienInvaderz
         '
         'picInvader6
         '
-        Me.picInvader6.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader6.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader6.BackgroundImage = CType(resources.GetObject("picInvader6.BackgroundImage"), System.Drawing.Image)
         Me.picInvader6.Image = CType(resources.GetObject("picInvader6.Image"), System.Drawing.Image)
         Me.picInvader6.Location = New System.Drawing.Point(287, 1)
-        Me.picInvader6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader6.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader6.Name = "picInvader6"
         Me.picInvader6.Size = New System.Drawing.Size(53, 52)
         Me.picInvader6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -154,10 +170,11 @@ Partial Class AlienInvaderz
         '
         'picInvader7
         '
-        Me.picInvader7.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader7.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader7.BackgroundImage = CType(resources.GetObject("picInvader7.BackgroundImage"), System.Drawing.Image)
         Me.picInvader7.Image = CType(resources.GetObject("picInvader7.Image"), System.Drawing.Image)
         Me.picInvader7.Location = New System.Drawing.Point(345, 1)
-        Me.picInvader7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader7.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader7.Name = "picInvader7"
         Me.picInvader7.Size = New System.Drawing.Size(53, 52)
         Me.picInvader7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -166,10 +183,11 @@ Partial Class AlienInvaderz
         '
         'picInvader8
         '
-        Me.picInvader8.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader8.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader8.BackgroundImage = CType(resources.GetObject("picInvader8.BackgroundImage"), System.Drawing.Image)
         Me.picInvader8.Image = CType(resources.GetObject("picInvader8.Image"), System.Drawing.Image)
         Me.picInvader8.Location = New System.Drawing.Point(402, 1)
-        Me.picInvader8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader8.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader8.Name = "picInvader8"
         Me.picInvader8.Size = New System.Drawing.Size(53, 52)
         Me.picInvader8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -178,10 +196,11 @@ Partial Class AlienInvaderz
         '
         'picInvader9
         '
-        Me.picInvader9.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader9.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader9.BackgroundImage = CType(resources.GetObject("picInvader9.BackgroundImage"), System.Drawing.Image)
         Me.picInvader9.Image = CType(resources.GetObject("picInvader9.Image"), System.Drawing.Image)
         Me.picInvader9.Location = New System.Drawing.Point(459, 1)
-        Me.picInvader9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader9.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader9.Name = "picInvader9"
         Me.picInvader9.Size = New System.Drawing.Size(53, 52)
         Me.picInvader9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -190,21 +209,79 @@ Partial Class AlienInvaderz
         '
         'picInvader10
         '
-        Me.picInvader10.BackColor = System.Drawing.Color.Transparent
+        Me.picInvader10.BackColor = System.Drawing.SystemColors.WindowText
+        Me.picInvader10.BackgroundImage = CType(resources.GetObject("picInvader10.BackgroundImage"), System.Drawing.Image)
         Me.picInvader10.Image = CType(resources.GetObject("picInvader10.Image"), System.Drawing.Image)
         Me.picInvader10.Location = New System.Drawing.Point(516, 1)
-        Me.picInvader10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picInvader10.Margin = New System.Windows.Forms.Padding(2)
         Me.picInvader10.Name = "picInvader10"
         Me.picInvader10.Size = New System.Drawing.Size(53, 52)
         Me.picInvader10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picInvader10.TabIndex = 11
         Me.picInvader10.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(1, 370)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(653, 41)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 370)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(653, 10)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 13
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 1)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(653, 379)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 14
+        Me.PictureBox3.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Lime
+        Me.Label1.Image = CType(resources.GetObject("Label1.Image"), System.Drawing.Image)
+        Me.Label1.Location = New System.Drawing.Point(12, 383)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(61, 20)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Score:"
+        '
+        'lblScore
+        '
+        Me.lblScore.BackColor = System.Drawing.Color.White
+        Me.lblScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.ForeColor = System.Drawing.Color.Lime
+        Me.lblScore.Image = CType(resources.GetObject("lblScore.Image"), System.Drawing.Image)
+        Me.lblScore.Location = New System.Drawing.Point(68, 383)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(100, 23)
+        Me.lblScore.TabIndex = 16
+        '
         'AlienInvaderz
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(652, 370)
+        Me.ClientSize = New System.Drawing.Size(652, 412)
+        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picInvader10)
         Me.Controls.Add(Me.picInvader9)
         Me.Controls.Add(Me.picInvader8)
@@ -215,10 +292,13 @@ Partial Class AlienInvaderz
         Me.Controls.Add(Me.picInvader3)
         Me.Controls.Add(Me.picInvader2)
         Me.Controls.Add(Me.picInvader1)
-        Me.Controls.Add(Me.picTank)
         Me.Controls.Add(Me.picMissile)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picTank)
+        Me.Controls.Add(Me.PictureBox3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AlienInvaderz"
@@ -235,7 +315,11 @@ Partial Class AlienInvaderz
         CType(Me.picInvader8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picInvader9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picInvader10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -252,4 +336,9 @@ Partial Class AlienInvaderz
     Friend WithEvents picInvader8 As PictureBox
     Friend WithEvents picInvader9 As PictureBox
     Friend WithEvents picInvader10 As PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblScore As System.Windows.Forms.Label
 End Class

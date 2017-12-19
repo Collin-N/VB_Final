@@ -68,10 +68,6 @@
 
     End Sub
     Private Sub btnPlay_Click_1(sender As Object, e As EventArgs) Handles btnPlay.Click
-        do While userChoice != ComputerChoice And Quit = numChosen
-            numChosen = +1
-
-
 
     End Sub
 End Class
