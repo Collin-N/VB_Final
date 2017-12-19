@@ -28,7 +28,12 @@ Partial Class HorseRacing
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBet = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.radHorse5 = New System.Windows.Forms.RadioButton()
+        Me.radHorse4 = New System.Windows.Forms.RadioButton()
+        Me.radHorse3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.radHorse1 = New System.Windows.Forms.RadioButton()
+        Me.picHorse1 = New System.Windows.Forms.PictureBox()
         Me.picHorse2 = New System.Windows.Forms.PictureBox()
         Me.picHorse3 = New System.Windows.Forms.PictureBox()
         Me.picHorse4 = New System.Windows.Forms.PictureBox()
@@ -46,24 +51,34 @@ Partial Class HorseRacing
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.radHorse1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.radHorse3 = New System.Windows.Forms.RadioButton()
-        Me.radHorse4 = New System.Windows.Forms.RadioButton()
-        Me.radHorse5 = New System.Windows.Forms.RadioButton()
+        Me.btnRace = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblHorse1Wins = New System.Windows.Forms.Label()
+        Me.lblHorse2Wins = New System.Windows.Forms.Label()
+        Me.lblHorse3Wins = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.lblHorse4Wins = New System.Windows.Forms.Label()
+        Me.lblHorse5Wins = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picHorse1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHorse2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHorse3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHorse4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHorse5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.radHorse2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox1.Controls.Add(Me.GroupBox3)
+        Me.GroupBox1.Controls.Add(Me.btnRace)
         Me.GroupBox1.Controls.Add(Me.lblMoney)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -123,13 +138,68 @@ Partial Class HorseRacing
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Place Your Bets!"
         '
-        'PictureBox1
+        'radHorse5
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.radHorse5.AutoSize = True
+        Me.radHorse5.Location = New System.Drawing.Point(102, 43)
+        Me.radHorse5.Name = "radHorse5"
+        Me.radHorse5.Size = New System.Drawing.Size(90, 17)
+        Me.radHorse5.TabIndex = 4
+        Me.radHorse5.TabStop = True
+        Me.radHorse5.Text = "RadioButton5"
+        Me.radHorse5.UseVisualStyleBackColor = True
+        '
+        'radHorse4
+        '
+        Me.radHorse4.AutoSize = True
+        Me.radHorse4.Location = New System.Drawing.Point(102, 19)
+        Me.radHorse4.Name = "radHorse4"
+        Me.radHorse4.Size = New System.Drawing.Size(90, 17)
+        Me.radHorse4.TabIndex = 3
+        Me.radHorse4.TabStop = True
+        Me.radHorse4.Text = "RadioButton4"
+        Me.radHorse4.UseVisualStyleBackColor = True
+        '
+        'radHorse3
+        '
+        Me.radHorse3.AutoSize = True
+        Me.radHorse3.Location = New System.Drawing.Point(6, 66)
+        Me.radHorse3.Name = "radHorse3"
+        Me.radHorse3.Size = New System.Drawing.Size(90, 17)
+        Me.radHorse3.TabIndex = 2
+        Me.radHorse3.TabStop = True
+        Me.radHorse3.Text = "RadioButton3"
+        Me.radHorse3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 43)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "RadioButton2"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'radHorse1
+        '
+        Me.radHorse1.AutoSize = True
+        Me.radHorse1.Location = New System.Drawing.Point(6, 19)
+        Me.radHorse1.Name = "radHorse1"
+        Me.radHorse1.Size = New System.Drawing.Size(90, 17)
+        Me.radHorse1.TabIndex = 0
+        Me.radHorse1.TabStop = True
+        Me.radHorse1.Text = "RadioButton1"
+        Me.radHorse1.UseVisualStyleBackColor = True
+        '
+        'picHorse1
+        '
+        Me.picHorse1.Location = New System.Drawing.Point(12, 12)
+        Me.picHorse1.Name = "picHorse1"
+        Me.picHorse1.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse1.TabIndex = 1
+        Me.picHorse1.TabStop = False
         '
         'picHorse2
         '
@@ -290,60 +360,123 @@ Partial Class HorseRacing
         Me.Label14.TabIndex = 18
         Me.Label14.Text = "5"
         '
-        'radHorse1
+        'btnRace
         '
-        Me.radHorse1.AutoSize = True
-        Me.radHorse1.Location = New System.Drawing.Point(6, 19)
-        Me.radHorse1.Name = "radHorse1"
-        Me.radHorse1.Size = New System.Drawing.Size(90, 17)
-        Me.radHorse1.TabIndex = 0
-        Me.radHorse1.TabStop = True
-        Me.radHorse1.Text = "RadioButton1"
-        Me.radHorse1.UseVisualStyleBackColor = True
+        Me.btnRace.Location = New System.Drawing.Point(15, 73)
+        Me.btnRace.Name = "btnRace"
+        Me.btnRace.Size = New System.Drawing.Size(85, 23)
+        Me.btnRace.TabIndex = 5
+        Me.btnRace.Text = "Race!"
+        Me.btnRace.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'GroupBox3
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 43)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.GroupBox3.Controls.Add(Me.lblHorse5Wins)
+        Me.GroupBox3.Controls.Add(Me.lblHorse4Wins)
+        Me.GroupBox3.Controls.Add(Me.Label22)
+        Me.GroupBox3.Controls.Add(Me.Label21)
+        Me.GroupBox3.Controls.Add(Me.lblHorse3Wins)
+        Me.GroupBox3.Controls.Add(Me.lblHorse2Wins)
+        Me.GroupBox3.Controls.Add(Me.lblHorse1Wins)
+        Me.GroupBox3.Controls.Add(Me.Label17)
+        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Location = New System.Drawing.Point(372, 13)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 89)
+        Me.GroupBox3.TabIndex = 6
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Total Wins:"
         '
-        'radHorse3
+        'Label15
         '
-        Me.radHorse3.AutoSize = True
-        Me.radHorse3.Location = New System.Drawing.Point(6, 66)
-        Me.radHorse3.Name = "radHorse3"
-        Me.radHorse3.Size = New System.Drawing.Size(90, 17)
-        Me.radHorse3.TabIndex = 2
-        Me.radHorse3.TabStop = True
-        Me.radHorse3.Text = "RadioButton3"
-        Me.radHorse3.UseVisualStyleBackColor = True
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(6, 19)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(47, 13)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "Horse 1:"
         '
-        'radHorse4
+        'Label16
         '
-        Me.radHorse4.AutoSize = True
-        Me.radHorse4.Location = New System.Drawing.Point(102, 19)
-        Me.radHorse4.Name = "radHorse4"
-        Me.radHorse4.Size = New System.Drawing.Size(90, 17)
-        Me.radHorse4.TabIndex = 3
-        Me.radHorse4.TabStop = True
-        Me.radHorse4.Text = "RadioButton4"
-        Me.radHorse4.UseVisualStyleBackColor = True
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(6, 44)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(47, 13)
+        Me.Label16.TabIndex = 1
+        Me.Label16.Text = "Horse 2:"
         '
-        'radHorse5
+        'Label17
         '
-        Me.radHorse5.AutoSize = True
-        Me.radHorse5.Location = New System.Drawing.Point(102, 43)
-        Me.radHorse5.Name = "radHorse5"
-        Me.radHorse5.Size = New System.Drawing.Size(90, 17)
-        Me.radHorse5.TabIndex = 4
-        Me.radHorse5.TabStop = True
-        Me.radHorse5.Text = "RadioButton5"
-        Me.radHorse5.UseVisualStyleBackColor = True
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(6, 68)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(47, 13)
+        Me.Label17.TabIndex = 2
+        Me.Label17.Text = "Horse 3:"
+        '
+        'lblHorse1Wins
+        '
+        Me.lblHorse1Wins.BackColor = System.Drawing.Color.White
+        Me.lblHorse1Wins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHorse1Wins.Location = New System.Drawing.Point(57, 19)
+        Me.lblHorse1Wins.Name = "lblHorse1Wins"
+        Me.lblHorse1Wins.Size = New System.Drawing.Size(22, 16)
+        Me.lblHorse1Wins.TabIndex = 3
+        '
+        'lblHorse2Wins
+        '
+        Me.lblHorse2Wins.BackColor = System.Drawing.Color.White
+        Me.lblHorse2Wins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHorse2Wins.Location = New System.Drawing.Point(57, 43)
+        Me.lblHorse2Wins.Name = "lblHorse2Wins"
+        Me.lblHorse2Wins.Size = New System.Drawing.Size(22, 15)
+        Me.lblHorse2Wins.TabIndex = 4
+        '
+        'lblHorse3Wins
+        '
+        Me.lblHorse3Wins.BackColor = System.Drawing.Color.White
+        Me.lblHorse3Wins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHorse3Wins.Location = New System.Drawing.Point(57, 66)
+        Me.lblHorse3Wins.Name = "lblHorse3Wins"
+        Me.lblHorse3Wins.Size = New System.Drawing.Size(22, 15)
+        Me.lblHorse3Wins.TabIndex = 5
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(96, 19)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(47, 13)
+        Me.Label21.TabIndex = 6
+        Me.Label21.Text = "Horse 4:"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(96, 44)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(47, 13)
+        Me.Label22.TabIndex = 7
+        Me.Label22.Text = "Horse 5:"
+        '
+        'lblHorse4Wins
+        '
+        Me.lblHorse4Wins.BackColor = System.Drawing.Color.White
+        Me.lblHorse4Wins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHorse4Wins.Location = New System.Drawing.Point(149, 19)
+        Me.lblHorse4Wins.Name = "lblHorse4Wins"
+        Me.lblHorse4Wins.Size = New System.Drawing.Size(22, 16)
+        Me.lblHorse4Wins.TabIndex = 8
+        '
+        'lblHorse5Wins
+        '
+        Me.lblHorse5Wins.BackColor = System.Drawing.Color.White
+        Me.lblHorse5Wins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHorse5Wins.Location = New System.Drawing.Point(149, 41)
+        Me.lblHorse5Wins.Name = "lblHorse5Wins"
+        Me.lblHorse5Wins.Size = New System.Drawing.Size(22, 16)
+        Me.lblHorse5Wins.TabIndex = 9
         '
         'HorseRacing
         '
@@ -366,7 +499,7 @@ Partial Class HorseRacing
         Me.Controls.Add(Me.picHorse4)
         Me.Controls.Add(Me.picHorse3)
         Me.Controls.Add(Me.picHorse2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picHorse1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.radHorse2)
         Me.Name = "HorseRacing"
@@ -375,12 +508,14 @@ Partial Class HorseRacing
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picHorse1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHorse2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHorse3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHorse4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHorse5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.radHorse2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -390,7 +525,7 @@ Partial Class HorseRacing
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtBet As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picHorse1 As System.Windows.Forms.PictureBox
     Friend WithEvents picHorse2 As System.Windows.Forms.PictureBox
     Friend WithEvents picHorse3 As System.Windows.Forms.PictureBox
     Friend WithEvents picHorse4 As System.Windows.Forms.PictureBox
@@ -413,4 +548,16 @@ Partial Class HorseRacing
     Friend WithEvents radHorse3 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents radHorse1 As System.Windows.Forms.RadioButton
+    Friend WithEvents btnRace As System.Windows.Forms.Button
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents lblHorse5Wins As System.Windows.Forms.Label
+    Friend WithEvents lblHorse4Wins As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents lblHorse3Wins As System.Windows.Forms.Label
+    Friend WithEvents lblHorse2Wins As System.Windows.Forms.Label
+    Friend WithEvents lblHorse1Wins As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class
