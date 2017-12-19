@@ -8,6 +8,7 @@
     Dim x As Integer
     Dim ShotDown As Integer
     Const NumOfInvaders As Integer = 10
+    Dim intScore As Integer
     Dim IRight(NumOfInvaders) As Boolean
     Dim Invaderz(NumOfInvaders) As PictureBox
 
@@ -131,6 +132,10 @@
                 ShotDown += 1
             End If
         Next
+        If picInvader1.Visible = False Then
+            intScore = intScore + 100
+        End If
+        intScore = lblScore.Text
     End Sub
 
     Private Sub LoadInvaders()

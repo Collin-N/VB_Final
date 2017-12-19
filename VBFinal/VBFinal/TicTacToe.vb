@@ -1,9 +1,5 @@
 ﻿Public Class TicTacToe
-    Private Sub btnTicTacToe_Click(sender As Object, e As EventArgs) Handles btnTicTacToe.Click
-        For btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9 
-
-    End Sub
-
+   
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         ' Resets the buttons to start another game.
         btn1.Text = ""
@@ -32,6 +28,8 @@
 
         btn9.Text = ""
         btn9.Enabled = True
+
+
     End Sub
 
     Private Sub btnNewGame_Click(sender As Object, e As EventArgs) Handles btnNewGame.Click
@@ -66,6 +64,10 @@
         ' Clears the Score for a New Game.
         lblWinsX.Text = ""
         lblWinsO.Text = ""
+
+
+    End Sub
+    Private Sub btnPlay_Click_1(sender As Object, e As EventArgs) Handles btnPlay.Click
 
     End Sub
 End Class

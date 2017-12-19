@@ -41,6 +41,7 @@ Partial Class TicTacToe
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTurn = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnPlay = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,7 +49,7 @@ Partial Class TicTacToe
         '
         Me.btn1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn1.Location = New System.Drawing.Point(8, 31)
-        Me.btn1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn1.Margin = New System.Windows.Forms.Padding(2)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(67, 65)
         Me.btn1.TabIndex = 0
@@ -58,7 +59,7 @@ Partial Class TicTacToe
         '
         Me.btn2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn2.Location = New System.Drawing.Point(95, 31)
-        Me.btn2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn2.Margin = New System.Windows.Forms.Padding(2)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(67, 65)
         Me.btn2.TabIndex = 1
@@ -68,7 +69,7 @@ Partial Class TicTacToe
         '
         Me.btn3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn3.Location = New System.Drawing.Point(179, 31)
-        Me.btn3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn3.Margin = New System.Windows.Forms.Padding(2)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(67, 65)
         Me.btn3.TabIndex = 2
@@ -78,7 +79,7 @@ Partial Class TicTacToe
         '
         Me.btn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn4.Location = New System.Drawing.Point(8, 113)
-        Me.btn4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn4.Margin = New System.Windows.Forms.Padding(2)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(67, 65)
         Me.btn4.TabIndex = 3
@@ -88,7 +89,7 @@ Partial Class TicTacToe
         '
         Me.btn5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn5.Location = New System.Drawing.Point(95, 113)
-        Me.btn5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn5.Margin = New System.Windows.Forms.Padding(2)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(67, 65)
         Me.btn5.TabIndex = 4
@@ -98,7 +99,7 @@ Partial Class TicTacToe
         '
         Me.btn6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn6.Location = New System.Drawing.Point(179, 113)
-        Me.btn6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn6.Margin = New System.Windows.Forms.Padding(2)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(67, 65)
         Me.btn6.TabIndex = 5
@@ -108,7 +109,7 @@ Partial Class TicTacToe
         '
         Me.btn7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn7.Location = New System.Drawing.Point(8, 194)
-        Me.btn7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn7.Margin = New System.Windows.Forms.Padding(2)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(67, 65)
         Me.btn7.TabIndex = 6
@@ -118,7 +119,7 @@ Partial Class TicTacToe
         '
         Me.btn8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn8.Location = New System.Drawing.Point(95, 194)
-        Me.btn8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn8.Margin = New System.Windows.Forms.Padding(2)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(67, 65)
         Me.btn8.TabIndex = 7
@@ -128,7 +129,7 @@ Partial Class TicTacToe
         '
         Me.btn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn9.Location = New System.Drawing.Point(179, 194)
-        Me.btn9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btn9.Margin = New System.Windows.Forms.Padding(2)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(67, 65)
         Me.btn9.TabIndex = 8
@@ -141,9 +142,9 @@ Partial Class TicTacToe
         Me.GroupBox1.Controls.Add(Me.lblWinsX)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(259, 31)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(151, 136)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
@@ -189,8 +190,8 @@ Partial Class TicTacToe
         '
         'btnRestart
         '
-        Me.btnRestart.Location = New System.Drawing.Point(8, 274)
-        Me.btnRestart.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRestart.Location = New System.Drawing.Point(11, 274)
+        Me.btnRestart.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRestart.Name = "btnRestart"
         Me.btnRestart.Size = New System.Drawing.Size(401, 23)
         Me.btnRestart.TabIndex = 11
@@ -200,7 +201,7 @@ Partial Class TicTacToe
         'btnNewGame
         '
         Me.btnNewGame.Location = New System.Drawing.Point(8, 301)
-        Me.btnNewGame.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnNewGame.Margin = New System.Windows.Forms.Padding(2)
         Me.btnNewGame.Name = "btnNewGame"
         Me.btnNewGame.Size = New System.Drawing.Size(401, 23)
         Me.btnNewGame.TabIndex = 12
@@ -237,11 +238,23 @@ Partial Class TicTacToe
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Turn"
         '
+        'btnPlay
+        '
+        Me.btnPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPlay.Location = New System.Drawing.Point(95, 91)
+        Me.btnPlay.Name = "btnPlay"
+        Me.btnPlay.Size = New System.Drawing.Size(222, 100)
+        Me.btnPlay.TabIndex = 16
+        Me.btnPlay.Text = "Play!"
+        Me.btnPlay.UseVisualStyleBackColor = True
+        '
         'TicTacToe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Red
         Me.ClientSize = New System.Drawing.Size(417, 329)
+        Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblTurn)
         Me.Controls.Add(Me.Label1)
@@ -257,7 +270,7 @@ Partial Class TicTacToe
         Me.Controls.Add(Me.btn3)
         Me.Controls.Add(Me.btn2)
         Me.Controls.Add(Me.btn1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "TicTacToe"
         Me.Text = "Tic-Tac-Toe"
         Me.GroupBox1.ResumeLayout(False)
@@ -286,4 +299,5 @@ Partial Class TicTacToe
     Friend WithEvents Label1 As Label
     Friend WithEvents lblTurn As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnPlay As System.Windows.Forms.Button
 End Class
