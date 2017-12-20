@@ -42,6 +42,7 @@ Partial Class AlienInvaderz
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.TimerScore = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picTank, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picMissile, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInvader1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -272,8 +273,13 @@ Partial Class AlienInvaderz
         Me.lblScore.Image = CType(resources.GetObject("lblScore.Image"), System.Drawing.Image)
         Me.lblScore.Location = New System.Drawing.Point(68, 383)
         Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(100, 23)
+        Me.lblScore.Size = New System.Drawing.Size(116, 23)
         Me.lblScore.TabIndex = 16
+        Me.lblScore.Text = "00:00:00:000"
+        '
+        'TimerScore
+        '
+        Me.TimerScore.Interval = 1
         '
         'AlienInvaderz
         '
@@ -341,4 +347,5 @@ Partial Class AlienInvaderz
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents TimerScore As System.Windows.Forms.Timer
 End Class
