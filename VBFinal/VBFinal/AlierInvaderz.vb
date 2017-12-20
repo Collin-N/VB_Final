@@ -64,7 +64,6 @@
     Private Sub AlierInvaders_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadSettings()
         LoadInvaders()
-        LoadScore()
     End Sub
 
     Private Sub LoadSettings()
@@ -132,48 +131,8 @@
                 ShotDown += 1
             End If
         Next
+       
 
-        If picInvader1.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader2.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader3.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader4.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader5.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader6.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader7.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader8.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader9.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        If picInvader10.Visible = False Then
-            intScore = intScore + 100
-        End If
-
-        lblScore.Text = intScore.ToString("n")
     End Sub
 
     Private Sub LoadInvaders()
@@ -189,10 +148,28 @@
         Invaders(9) = picInvader9
         Invaders(10) = picInvader10
     End Sub
-    Private Sub LoadScore()
-        'Loads the score into the score label.
-        If picInvader1.Visible = False Then
 
-        End If
+    Private Sub TimerScore_Tick(sender As Object, e As EventArgs) Handles TimerScore.Tick
+        picInvader1.Visible = False
+        
+        picInvader1.Visible = False
+        
+        picInvader3.Visible = False
+
+        picInvader4.Visible = False
+
+        picInvader5.Visible = False
+
+        picInvader6.Visible = False
+
+        picInvader7.Visible = False
+
+        picInvader8.Visible = False
+
+        picInvader9.Visible = False
+
+        picInvader10.Visible = False
+
+        lblScore.Text = intScore.ToString("n")
     End Sub
 End Class
