@@ -7,7 +7,13 @@
     Private Sub btnRace_Click(sender As Object, e As EventArgs) Handles btnRace.Click
         Dim intCount1, intCount2, intCount3, intCount4, intCount5 As Integer
         Dim rand As New Random
-
+        Dim totalMoney As Integer
+        Dim totalBet As Integer
+        Dim SecretariatWon As Integer
+        Dim ManOWarWon As Integer
+        Dim SeabiscutWon As Integer
+        Dim ExterminatorWon As Integer
+        Dim CaliforniaChromeWon As Integer
         Dim intScore As Integer = 1
         Dim intWin As Integer = 10
 
@@ -61,5 +67,44 @@
                 MessageBox.Show("Horse 5 Wins!")
             End If
         End If
+
+        If SecretariatWon = True And radHorse1.Checked = True Then
+            lblMoney.Text += totalBet
+        Else
+            lblMoney.Text -= totalBet
+        End If
+        If ManOWarWon = True And radHorse2.Checked = True Then
+            lblMoney.Text += totalBet
+        Else
+            lblMoney.Text -= totalBet
+        End If
+        If SeabiscutWon = True And radHorse3.Checked = True Then
+            lblMoney.Text += totalBet
+        Else
+            lblMoney.Text -= totalBet
+        End If
+        If ExterminatorWon = True And radHorse4.Checked = True Then
+            lblMoney.Text += totalBet
+        Else
+            lblMoney.Text -= totalBet
+        End If
+        If CaliforniaChromeWon = True And radHorse5.Checked = True Then
+            lblMoney.Text += totalBet
+        Else
+            lblMoney.Text -= totalBet
+        End If
+        If lblMoney.Text < 0 Then
+            MessageBox.Show("You ran out of money! Please leave the track!")
+            Me.Close()
+        ElseIf lblMoney.Text >= 10000 Then
+            MessageBox.Show("You took all of our money! Please leave the track!")
+            Me.Close()
+        End If
+        lblMoney.Text = lblMoney.Text
+        txtBet.Text = totalBet
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class
