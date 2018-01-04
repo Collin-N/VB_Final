@@ -1,6 +1,7 @@
 ﻿Public Class TicTacToe
     Dim Xtotal As Integer = 0
     Dim Ototal As Integer = 0
+
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         ' Resets the buttons to start another game.
         btn1.Text = ""
@@ -81,69 +82,69 @@
         btn1.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -164,69 +165,69 @@
         btn2.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -246,69 +247,69 @@
         btn3.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -328,69 +329,69 @@
         btn4.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -410,69 +411,69 @@
         btn5.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -492,69 +493,69 @@
         btn6.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -574,69 +575,69 @@
         btn7.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -656,69 +657,69 @@
         btn8.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -738,69 +739,69 @@
         btn9.Enabled = False
         ' Win conditions for X.
         If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
         If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
+            Xtotal = 1 + Xtotal
             MessageBox.Show("Player X Wins!")
         End If
 
         ' Win conditions for O.
         If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
         If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
+            Ototal = 1 + Ototal
             MessageBox.Show("Player O Wins!")
         End If
 
@@ -808,76 +809,5 @@
         lblWinsO.Text = Ototal.ToString("n")
     End Sub
 
-    Private Sub TicTacToe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Win conditions for X.
-        If btn1.Text = "X" And btn2.Text = "X" And btn3.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn1.Text = "X" And btn4.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn1.Text = "X" And btn5.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn2.Text = "X" And btn5.Text = "X" And btn8.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn3.Text = "X" And btn6.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn3.Text = "X" And btn5.Text = "X" And btn7.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn4.Text = "X" And btn5.Text = "X" And btn6.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-        If btn7.Text = "X" And btn8.Text = "X" And btn9.Text = "X" Then
-            Xtotal += Xtotal
-            MessageBox.Show("Player X Wins!")
-        End If
-
-        ' Win conditions for O.
-        If btn1.Text = "O" And btn2.Text = "O" And btn3.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn1.Text = "O" And btn4.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn1.Text = "O" And btn5.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn2.Text = "O" And btn5.Text = "O" And btn8.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn3.Text = "O" And btn6.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn3.Text = "O" And btn5.Text = "O" And btn7.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn4.Text = "O" And btn5.Text = "O" And btn6.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-        If btn7.Text = "O" And btn8.Text = "O" And btn9.Text = "O" Then
-            Ototal += Ototal
-            MessageBox.Show("Player O Wins!")
-        End If
-
-        lblWinsX.Text = Xtotal.ToString("n")
-        lblWinsO.Text = Ototal.ToString("n")
-    End Sub
+  
 End Class
