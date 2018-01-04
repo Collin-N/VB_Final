@@ -1,6 +1,7 @@
 ﻿Public Class TicTacToe
     Dim Xtotal As Integer = 0
     Dim Ototal As Integer = 0
+
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         ' Resets the buttons to start another game.
         btn1.Text = ""
