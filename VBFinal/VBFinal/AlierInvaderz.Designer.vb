@@ -243,6 +243,7 @@ Partial Class AlienInvaderz
         '
         'PictureBox3
         '
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Cross
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 1)
         Me.PictureBox3.Name = "PictureBox3"
