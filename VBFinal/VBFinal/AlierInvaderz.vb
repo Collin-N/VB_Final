@@ -132,7 +132,6 @@
             End If
         Next
        
-
     End Sub
 
     Private Sub LoadInvaders()

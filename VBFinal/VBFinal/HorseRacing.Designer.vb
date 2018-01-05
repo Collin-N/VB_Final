@@ -63,6 +63,7 @@ Partial Class HorseRacing
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnRestart = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -77,6 +78,7 @@ Partial Class HorseRacing
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox1.Controls.Add(Me.btnRestart)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.btnRace)
         Me.GroupBox1.Controls.Add(Me.lblMoney)
@@ -201,7 +203,7 @@ Partial Class HorseRacing
         '
         'btnRace
         '
-        Me.btnRace.Location = New System.Drawing.Point(15, 73)
+        Me.btnRace.Location = New System.Drawing.Point(15, 61)
         Me.btnRace.Name = "btnRace"
         Me.btnRace.Size = New System.Drawing.Size(85, 23)
         Me.btnRace.TabIndex = 5
@@ -313,9 +315,11 @@ Partial Class HorseRacing
         '
         'picHorse1
         '
+        Me.picHorse1.BackColor = System.Drawing.Color.White
         Me.picHorse1.Location = New System.Drawing.Point(12, 12)
         Me.picHorse1.Name = "picHorse1"
         Me.picHorse1.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picHorse1.TabIndex = 1
         Me.picHorse1.TabStop = False
         '
@@ -478,6 +482,15 @@ Partial Class HorseRacing
         Me.Label14.TabIndex = 18
         Me.Label14.Text = "5"
         '
+        'btnRestart
+        '
+        Me.btnRestart.Location = New System.Drawing.Point(15, 85)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(85, 23)
+        Me.btnRestart.TabIndex = 7
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = True
+        '
         'HorseRacing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -560,4 +573,5 @@ Partial Class HorseRacing
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents btnRestart As System.Windows.Forms.Button
 End Class
