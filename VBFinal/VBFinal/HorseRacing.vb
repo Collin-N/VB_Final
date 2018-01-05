@@ -7,8 +7,8 @@
     Private Sub btnRace_Click(sender As Object, e As EventArgs) Handles btnRace.Click
         Dim intCount1, intCount2, intCount3, intCount4, intCount5 As Integer
         Dim rand As New Random
-        Dim totalMoney As Integer
-        Dim totalBet As Integer
+        Dim totalMoney As Double
+        Dim totalBet As Double
         Dim SecretariatWon As Integer
         Dim ManOWarWon As Integer
         Dim SeabiscutWon As Integer
@@ -69,42 +69,53 @@
         End If
 
         If SecretariatWon = True And radHorse1.Checked = True Then
-            lblMoney.Text += totalBet
+            totalMoney += totalBet
         Else
-            lblMoney.Text -= totalBet
+            totalMoney -= totalBet
         End If
         If ManOWarWon = True And radHorse2.Checked = True Then
-            lblMoney.Text += totalBet
+            totalMoney += totalBet
         Else
-            lblMoney.Text -= totalBet
+            totalMoney -= totalBet
         End If
         If SeabiscutWon = True And radHorse3.Checked = True Then
-            lblMoney.Text += totalBet
+            totalMoney += totalBet
         Else
-            lblMoney.Text -= totalBet
+            totalMoney -= totalBet
         End If
         If ExterminatorWon = True And radHorse4.Checked = True Then
-            lblMoney.Text += totalBet
+            totalMoney += totalBet
         Else
-            lblMoney.Text -= totalBet
+            totalMoney -= totalBet
         End If
         If CaliforniaChromeWon = True And radHorse5.Checked = True Then
-            lblMoney.Text += totalBet
+            totalMoney += totalBet
         Else
-            lblMoney.Text -= totalBet
+            totalMoney -= totalBet
         End If
-        If lblMoney.Text < 0 Then
+        If totalMoney < 0 Then
             MessageBox.Show("You ran out of money! Please leave the track!")
             Me.Close()
-        ElseIf lblMoney.Text >= 10000 Then
+        ElseIf totalMoney >= 10000 Then
             MessageBox.Show("You took all of our money! Please leave the track!")
             Me.Close()
         End If
-        lblMoney.Text = lblMoney.Text
-        txtBet.Text = totalBet
+        lblMoney.Text = totalMoney.ToString("c")
+        txtBet.Text = totalBet.ToString("c")
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
+    Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
+        lblMoney.Text = ""
+        txtBet.Text = ""
+        lblHorse1Wins.Text = ""
+        lblHorse2Wins.Text = ""
+        lblHorse3Wins.Text = ""
+        lblHorse4Wins.Text = ""
+        lblHorse5Wins.Text = ""
+        picHorse1.Location = New Point(12, 12)
+        picHorse2.Location = New Point(12, 80)
+        picHorse3.Location = New Point(12, 145)
+        picHorse4.Location = New Point(12, 210)
+        picHorse5.Location = New Point(12, 278)
     End Sub
 End Class

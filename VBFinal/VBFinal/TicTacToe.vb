@@ -808,6 +808,13 @@
         lblWinsX.Text = Xtotal.ToString("n")
         lblWinsO.Text = Ototal.ToString("n")
     End Sub
-
   
+    Private Sub TicTacToe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Please select a game mode, by clicking file.")
+
+    End Sub
+
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+        Me.Close()
+    End Sub
 End Class
