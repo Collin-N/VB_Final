@@ -82,12 +82,6 @@
     <Compile Include="HorseRacing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeaderBoard.Designer.vb">
-      <DependentUpon>LeaderBoard.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LeaderBoard.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LoginPage.Designer.vb">
       <DependentUpon>LoginPage.vb</DependentUpon>
     </Compile>
@@ -129,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HorseRacing.resx">
       <DependentUpon>HorseRacing.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LeaderBoard.resx">
-      <DependentUpon>LeaderBoard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.vb</DependentUpon>

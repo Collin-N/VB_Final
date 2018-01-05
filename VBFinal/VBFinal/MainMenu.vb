@@ -2,7 +2,7 @@
 Public Class MainMenu
     Dim A As StreamReader
     Dim B As String
-    Dim C As String = "VB_Final/leaderboard.txt"
+    Dim C As String = "VB_Final/login.txt"
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
@@ -26,6 +26,7 @@ Public Class MainMenu
             Dim D As FileStream
             D = File.Create(C)
             D.Close()
+
         End If
     End Sub
 End Class

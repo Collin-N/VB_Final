@@ -31,48 +31,56 @@ Partial Class LoginPage
         'cbxUser
         '
         Me.cbxUser.FormattingEnabled = True
-        Me.cbxUser.Location = New System.Drawing.Point(74, 59)
+        Me.cbxUser.Location = New System.Drawing.Point(133, 127)
+        Me.cbxUser.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.cbxUser.Name = "cbxUser"
-        Me.cbxUser.Size = New System.Drawing.Size(121, 21)
+        Me.cbxUser.Size = New System.Drawing.Size(257, 37)
         Me.cbxUser.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(52, 27)
+        Me.Label1.Location = New System.Drawing.Point(159, 60)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(166, 13)
+        Me.Label1.Size = New System.Drawing.Size(215, 29)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "select a name be used for scoring"
+        Me.Label1.Text = "login with game name"
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(46, 155)
+        Me.btnStart.Location = New System.Drawing.Point(57, 230)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(75, 23)
+        Me.btnStart.Size = New System.Drawing.Size(163, 50)
         Me.btnStart.TabIndex = 2
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(154, 155)
+        Me.btnExit.Location = New System.Drawing.Point(303, 230)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(163, 50)
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'LoginPage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(531, 335)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cbxUser)
+        Me.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.Name = "LoginPage"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "LoginPage"
         Me.ResumeLayout(False)
         Me.PerformLayout()
