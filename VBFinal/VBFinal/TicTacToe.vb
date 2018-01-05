@@ -817,4 +817,71 @@
     Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+    Private Sub PlayerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerToolStripMenuItem.Click
+        ComputerPlays()
+    End Sub
+    Sub ComputerPlays()
+        Dim objRandom As New Random
+        Dim intRandom As Integer
+
+        intRandom = objRandom.Next(1, 10)
+
+        If intRandom = 1 And btn1.Enabled = True Then
+            btn1.Text = "O"
+            btn1.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 2 And btn2.Enabled = True Then
+            btn2.Text = "O"
+            btn2.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 3 And btn3.Enabled = True Then
+            btn3.Text = "O"
+            btn3.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 4 And btn4.Enabled = True Then
+            btn4.Text = "O"
+            btn4.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 5 And btn5.Enabled = True Then
+            btn5.Text = "O"
+            btn5.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 6 And btn6.Enabled = True Then
+            btn6.Text = "O"
+            btn6.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 7 And btn7.Enabled = True Then
+            btn7.Text = "O"
+            btn7.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 8 And btn8.Enabled = True Then
+            btn8.Text = "O"
+            btn8.Enabled = False
+            Exit Sub
+        End If
+
+        If intRandom = 9 And btn9.Enabled = True Then
+            btn9.Text = "O"
+            btn9.Enabled = False
+            Exit Sub
+        End If
+
+        ComputerPlays()
+
+    End Sub
 End Class
