@@ -1,6 +1,7 @@
 ﻿Public Class TicTacToe
     Dim Xtotal As Integer = 0
     Dim Ototal As Integer = 0
+    Dim intZet As Integer = 0
 
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         ' Resets the buttons to start another game.
@@ -31,6 +32,7 @@
         btn9.Text = ""
         btn9.Enabled = True
 
+        intZet = 0
 
     End Sub
 
@@ -152,7 +154,6 @@
         lblWinsO.Text = Ototal.ToString("n")
 
     End Sub
-
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
         ' Displays X or O when a button is selected.
         If lblTurn.Text = "X" Then
@@ -808,20 +809,45 @@
         lblWinsX.Text = Xtotal.ToString("n")
         lblWinsO.Text = Ototal.ToString("n")
     End Sub
-  
+
     Private Sub TicTacToe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MessageBox.Show("Please select a game mode, by clicking file.")
 
+        btn1.Text = ""
+        btn1.Enabled = True
+
+        btn2.Text = ""
+        btn2.Enabled = True
+
+        btn3.Text = ""
+        btn3.Enabled = True
+
+        btn4.Text = ""
+        btn4.Enabled = True
+
+        btn5.Text = ""
+        btn5.Enabled = True
+
+        btn6.Text = ""
+        btn6.Enabled = True
+
+        btn7.Text = ""
+        btn7.Enabled = True
+
+        btn8.Text = ""
+        btn8.Enabled = True
+
+        btn9.Text = ""
+        btn9.Enabled = True
+
+        intZet = 0
     End Sub
 
     Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
         Me.Close()
     End Sub
 
-    Private Sub PlayerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerToolStripMenuItem.Click
-        ComputerPlays()
-    End Sub
-    Sub ComputerPlays()
+    Private Sub ComputerPlays()
         Dim objRandom As New Random
         Dim intRandom As Integer
 
@@ -883,5 +909,9 @@
 
         ComputerPlays()
 
+    End Sub
+
+    Private Sub PlayerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerToolStripMenuItem.Click
+        ComputerPlays()
     End Sub
 End Class
