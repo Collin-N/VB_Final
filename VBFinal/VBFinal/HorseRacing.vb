@@ -118,4 +118,8 @@
         picHorse4.Location = New Point(12, 210)
         picHorse5.Location = New Point(12, 278)
     End Sub
+
+    Private Sub HorseRacing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play(My.Resources.recreation002, AudioPlayMode.Background)
+    End Sub
 End Class

@@ -812,6 +812,8 @@
 
     Private Sub TicTacToe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MessageBox.Show("Please select a game mode, by clicking file.")
+<<<<<<< HEAD
+=======
 
         btn1.Text = ""
         btn1.Enabled = True
@@ -841,6 +843,7 @@
         btn9.Enabled = True
 
         intZet = 0
+>>>>>>> c60faf0b4a5c4dac28e41c21f3e94a696dc3f87c
     End Sub
 
     Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
