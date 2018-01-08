@@ -23,6 +23,7 @@ Partial Class HorseRacing
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnRestart = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.lblHorse5Wins = New System.Windows.Forms.Label()
         Me.lblHorse4Wins = New System.Windows.Forms.Label()
@@ -63,7 +64,6 @@ Partial Class HorseRacing
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.btnRestart = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -91,6 +91,15 @@ Partial Class HorseRacing
         Me.GroupBox1.Size = New System.Drawing.Size(815, 108)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'btnRestart
+        '
+        Me.btnRestart.Location = New System.Drawing.Point(15, 85)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(85, 23)
+        Me.btnRestart.TabIndex = 7
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -481,15 +490,6 @@ Partial Class HorseRacing
         Me.Label14.Size = New System.Drawing.Size(26, 31)
         Me.Label14.TabIndex = 18
         Me.Label14.Text = "5"
-        '
-        'btnRestart
-        '
-        Me.btnRestart.Location = New System.Drawing.Point(15, 85)
-        Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(85, 23)
-        Me.btnRestart.TabIndex = 7
-        Me.btnRestart.Text = "Restart"
-        Me.btnRestart.UseVisualStyleBackColor = True
         '
         'HorseRacing
         '
