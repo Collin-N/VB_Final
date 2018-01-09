@@ -18,4 +18,9 @@
         Dim box = New HorseRacing()
         box.Show()
     End Sub
+
+    Private Sub btnTicTacToeVsComputer_Click(sender As Object, e As EventArgs) Handles btnTicTacToeVsComputer.Click
+        Dim box = New TicTacToeVsComputer()
+        box.Show()
+    End Sub
 End Class
