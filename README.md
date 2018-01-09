@@ -9,4 +9,5 @@ Here on this main menu will be four games listed in this order:
 4. Horse Racing
 
 Below is a flow chart of how our program works:
+
 <img src="VBFINAL.html">
