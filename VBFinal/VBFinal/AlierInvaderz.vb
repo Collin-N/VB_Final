@@ -62,6 +62,7 @@
     End Sub
 
     Private Sub AlierInvaders_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Welcome to the Amry Soldier! Do you have what it takes to save the World?")
         LoadSettings()
         LoadInvaders()
     End Sub
@@ -171,4 +172,5 @@
 
         lblScore.Text = intScore.ToString("n")
     End Sub
+
 End Class

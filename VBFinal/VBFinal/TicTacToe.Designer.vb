@@ -43,8 +43,6 @@ Partial Class TicTacToe
         Me.Label4 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PlayerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PlayerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -237,22 +235,10 @@ Partial Class TicTacToe
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PlayerToolStripMenuItem, Me.PlayerToolStripMenuItem1, Me.CloseToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 29)
         Me.FileToolStripMenuItem.Text = "File"
-        '
-        'PlayerToolStripMenuItem
-        '
-        Me.PlayerToolStripMenuItem.Name = "PlayerToolStripMenuItem"
-        Me.PlayerToolStripMenuItem.Size = New System.Drawing.Size(210, 30)
-        Me.PlayerToolStripMenuItem.Text = "1 Player"
-        '
-        'PlayerToolStripMenuItem1
-        '
-        Me.PlayerToolStripMenuItem1.Name = "PlayerToolStripMenuItem1"
-        Me.PlayerToolStripMenuItem1.Size = New System.Drawing.Size(210, 30)
-        Me.PlayerToolStripMenuItem1.Text = "2 Player"
         '
         'CloseToolStripMenuItem
         '
@@ -283,7 +269,7 @@ Partial Class TicTacToe
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "TicTacToe"
-        Me.Text = "Tic-Tac-Toe"
+        Me.Text = "2-Player-Tic-Tac-Toe"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
@@ -314,7 +300,5 @@ Partial Class TicTacToe
     Friend WithEvents Label4 As Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PlayerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PlayerToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

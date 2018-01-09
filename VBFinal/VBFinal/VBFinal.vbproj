@@ -110,6 +110,12 @@
     <Compile Include="TicTacToe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TicTacToeVsComputer.Designer.vb">
+      <DependentUpon>TicTacToeVsComputer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TicTacToeVsComputer.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AlierInvaderz.resx">
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TicTacToe.resx">
       <DependentUpon>TicTacToe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicTacToeVsComputer.resx">
+      <DependentUpon>TicTacToeVsComputer.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
