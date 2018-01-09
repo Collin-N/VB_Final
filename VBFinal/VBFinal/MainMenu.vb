@@ -19,6 +19,8 @@ Public Class MainMenu
 
     Private Sub btnHorseRacing_Click(sender As Object, e As EventArgs) Handles btnHorseRacing.Click
 
+    Dim box = New HorseRacing()
+        box.Show()
     End Sub
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -27,6 +29,11 @@ Public Class MainMenu
             D = File.Create(C)
             D.Close()
 
-        End If
+        End If      
+    End Sub
+
+    Private Sub btnTicTacToeVsComputer_Click(sender As Object, e As EventArgs) Handles btnTicTacToeVsComputer.Click
+        Dim box = New TicTacToeVsComputer()
+        box.Show()
     End Sub
 End Class
