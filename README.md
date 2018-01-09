@@ -7,5 +7,6 @@ Here on this main menu will be four games listed in this order:
 2. 2 Player Tic Tac Toe
 3. Tic Tac Toe vs Computer
 4. Horse Racing
+
 Below is a flow chart of how our program works:
 <img src="VBFINAL.html">
