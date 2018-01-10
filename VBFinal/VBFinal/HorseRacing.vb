@@ -7,7 +7,7 @@
     Private Sub btnRace_Click(sender As Object, e As EventArgs) Handles btnRace.Click
         Dim intCount1, intCount2, intCount3, intCount4, intCount5 As Integer
         Dim rand As New Random
-        Dim totalMoney As Double
+        Dim totalMoney As Double = 50.0
         Dim totalBet As Double
         Dim SecretariatWon As Integer
         Dim ManOWarWon As Integer
@@ -16,7 +16,7 @@
         Dim CaliforniaChromeWon As Integer
         Dim intScore As Integer = 1
         Dim intWin As Integer = 10
-
+        totalBet = CDbl(txtBet.Text)
         For intCount1 = 25 To rand.Next(250) + 450
             picHorse1.Left = intCount1
         Next
@@ -100,13 +100,12 @@
             MessageBox.Show("You took all of our money! Please leave the track!")
             Me.Close()
         End If
-        lblMoney.Text = totalMoney.ToString("c")
-        txtBet.Text = totalBet.ToString("c")
+        lblMoney.Text = totalMoney.ToString()
     End Sub
 
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
-        lblMoney.Text = ""
-        txtBet.Text = ""
+        lblMoney.Text = "50.00"
+        txtBet.Text = "0.00"
         lblHorse1Wins.Text = ""
         lblHorse2Wins.Text = ""
         lblHorse3Wins.Text = ""

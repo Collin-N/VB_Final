@@ -16,12 +16,12 @@ Public Class AlienInvaderz
     Dim Invaders(NumOfInvaders) As PictureBox
 
         Private Sub TimerMain_Tick(sender As Object, e As EventArgs) Handles TimerMain.Tick
-            MoveTanK()
-            FireMissile()
-            MoveInvader()
-            CheckHit()
-            CheckGameOver()
-        End Sub
+        MoveTanK()
+        FireMissile()
+        MoveInvader()
+        CheckHit()
+        CheckGameOver()
+    End Sub
 
         Private Sub AlierInvaders_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
             ' Move the tank Right
@@ -68,6 +68,7 @@ Public Class AlienInvaderz
         LoadSettings()
         LoadInvaders()
         MessageBox.Show("Welcome to the Amry Soldier! Do you have what it takes to save the World?")
+        CountUpTimer.Enabled = True
     End Sub
 
     Public Sub LoadSettings()
@@ -118,13 +119,15 @@ Public Class AlienInvaderz
             ' Notifies the program to stop and show message that you failed, game over
             For Me.x = 1 To NumOfInvaders
                 If Invaders(x).Top + Invaders(x).Height >= picTank.Top And (Invaders(x).Visible = True) Then
-                    TimerMain.Enabled = False
-                    MessageBox.Show("GAME OVER - Earth was Invaded!!! Mission Failed Soldier.")
+                TimerMain.Enabled = False
+                CountUpTimer.Enabled = False
+                MessageBox.Show("GAME OVER - Earth was Invaded!!! Mission Failed Soldier.")
                 End If
             Next
             If ShotDown = NumOfInvaders Then
-                TimerMain.Enabled = False
-                MessageBox.Show("Good Job Soldier - Earth is Saved!")
+            TimerMain.Enabled = False
+            CountUpTimer.Enabled = False
+            MessageBox.Show("Good Job Soldier - Earth is Saved!")
             End If
         End Sub
 
@@ -153,28 +156,65 @@ Public Class AlienInvaderz
             Invaders(10) = picInvader10
         End Sub
 
-        Private Sub TimerScore_Tick(sender As Object, e As EventArgs) Handles TimerScore.Tick
-            picInvader1.Visible = False
+    Private Sub TimerScore_Tick(sender As Object, e As EventArgs)
+        picInvader1.Visible = False
 
-            picInvader1.Visible = False
+        picInvader1.Visible = False
 
-            picInvader3.Visible = False
+        picInvader3.Visible = False
 
-            picInvader4.Visible = False
+        picInvader4.Visible = False
 
-            picInvader5.Visible = False
+        picInvader5.Visible = False
 
-            picInvader6.Visible = False
+        picInvader6.Visible = False
 
-            picInvader7.Visible = False
+        picInvader7.Visible = False
 
-            picInvader8.Visible = False
+        picInvader8.Visible = False
 
-            picInvader9.Visible = False
+        picInvader9.Visible = False
 
-            picInvader10.Visible = False
+        picInvader10.Visible = False
 
-            lblScore.Text = intScore.ToString("n")
-        End Sub
 
-    End Class
+    End Sub
+
+    Private Sub CountUpTimer_Tick(sender As Object, e As EventArgs) Handles CountUpTimer.Tick
+        lblSeconds.Text = lblSeconds.Text + 1
+        CountUpTimer.Interval = 1000
+        If lblHours.Text = "" Then
+            lblHours.Text = "0"
+        End If
+        If lblMinutes.Text = "" Then
+            lblMinutes.Text = "0"
+        End If
+        If lblSeconds.Text = "" Then
+            lblSeconds.Text = "0"
+        End If
+        If lblHours.Text = "00" Then
+            lblHours.Text = "0"
+        End If
+        If lblMinutes.Text = "00" Then
+            lblMinutes.Text = "0"
+        End If
+        If lblSeconds.Text = "00" Then
+            lblSeconds.Text = "0"
+        End If
+        If lblSeconds.Text = "60" Then
+            lblMinutes.Text = lblMinutes.Text + 1
+            lblSeconds.Text = "0"
+        End If
+        If lblMinutes.Text = "60" Then
+            lblHours.Text = lblHours.Text + 1
+            lblMinutes.Text = "0"
+        End If
+        If lblHours.Text = "59" Then
+            If lblMinutes.Text = "59" Then
+                If lblSeconds.Text = "59" Then
+                    CountUpTimer.Enabled = False
+                End If
+            End If
+        End If
+    End Sub
+End Class
