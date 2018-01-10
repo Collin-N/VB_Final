@@ -30,6 +30,7 @@ Partial Class LoginPage
         '
         'cbxUser
         '
+        Me.cbxUser.ForeColor = System.Drawing.SystemColors.WindowText
         Me.cbxUser.FormattingEnabled = True
         Me.cbxUser.Location = New System.Drawing.Point(133, 127)
         Me.cbxUser.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
@@ -40,6 +41,8 @@ Partial Class LoginPage
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.MenuBar
+        Me.Label1.Image = Global.VBFinal.My.Resources.Resources._3jcJSn
         Me.Label1.Location = New System.Drawing.Point(159, 60)
         Me.Label1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.Label1.Name = "Label1"
@@ -72,6 +75,7 @@ Partial Class LoginPage
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackgroundImage = Global.VBFinal.My.Resources.Resources._3jcJSn
         Me.ClientSize = New System.Drawing.Size(531, 335)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)

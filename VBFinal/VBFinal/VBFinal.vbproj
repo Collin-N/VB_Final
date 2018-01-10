@@ -167,6 +167,12 @@
   <ItemGroup>
     <None Include="Resources\Bottle Rocket-SoundBible.com-332895117.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VBFINAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3jcJSn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
