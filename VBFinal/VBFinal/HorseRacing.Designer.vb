@@ -22,6 +22,7 @@ Partial Class HorseRacing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HorseRacing))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnRestart = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -327,42 +328,51 @@ Partial Class HorseRacing
         'picHorse1
         '
         Me.picHorse1.BackColor = System.Drawing.Color.White
+        Me.picHorse1.Image = CType(resources.GetObject("picHorse1.Image"), System.Drawing.Image)
         Me.picHorse1.Location = New System.Drawing.Point(12, 12)
         Me.picHorse1.Name = "picHorse1"
         Me.picHorse1.Size = New System.Drawing.Size(100, 50)
-        Me.picHorse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picHorse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picHorse1.TabIndex = 1
         Me.picHorse1.TabStop = False
         '
         'picHorse2
         '
+        Me.picHorse2.Image = CType(resources.GetObject("picHorse2.Image"), System.Drawing.Image)
         Me.picHorse2.Location = New System.Drawing.Point(12, 80)
         Me.picHorse2.Name = "picHorse2"
         Me.picHorse2.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picHorse2.TabIndex = 2
         Me.picHorse2.TabStop = False
         '
         'picHorse3
         '
+        Me.picHorse3.Image = CType(resources.GetObject("picHorse3.Image"), System.Drawing.Image)
         Me.picHorse3.Location = New System.Drawing.Point(12, 145)
         Me.picHorse3.Name = "picHorse3"
         Me.picHorse3.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picHorse3.TabIndex = 3
         Me.picHorse3.TabStop = False
         '
         'picHorse4
         '
+        Me.picHorse4.Image = CType(resources.GetObject("picHorse4.Image"), System.Drawing.Image)
         Me.picHorse4.Location = New System.Drawing.Point(12, 210)
         Me.picHorse4.Name = "picHorse4"
         Me.picHorse4.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picHorse4.TabIndex = 4
         Me.picHorse4.TabStop = False
         '
         'picHorse5
         '
+        Me.picHorse5.Image = CType(resources.GetObject("picHorse5.Image"), System.Drawing.Image)
         Me.picHorse5.Location = New System.Drawing.Point(12, 278)
         Me.picHorse5.Name = "picHorse5"
         Me.picHorse5.Size = New System.Drawing.Size(100, 50)
+        Me.picHorse5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picHorse5.TabIndex = 5
         Me.picHorse5.TabStop = False
         '
