@@ -2,7 +2,9 @@
 Public Class LoginPage
     Dim A As StreamReader
     Dim B As String
-    Dim C As String = "VB_Final/login.txt"
+    Dim C As String = "C:\Users\GeneralGibbs\Desktop\Vb Final\VB_Final\Login.txt"
+    Dim Findstring = File.ReadAllText("C:\Users\GeneralGibbs\Desktop\Vb Final\VB_Final\Login.txt")
+    Dim Lookfor As String = " "
     Dim User As String
     Private Sub LoginPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not File.Exists(C) Then
@@ -10,6 +12,7 @@ Public Class LoginPage
             D = File.Create(C)
             D.Close()
         End If
+        ReadFile()
     End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
@@ -23,11 +26,14 @@ Public Class LoginPage
             End If
             ReadFile()
         Else
+            Lookfor = cbxUser.Text
             User = cbxUser.Text
-            File.AppendAllText(C, cbxUser.Text & vbCrLf)
-            cbxUser.Text = ""
+            If Not Findstring.Contains(Lookfor) Then
+                File.AppendAllText(C, cbxUser.Text & vbCrLf)
+                cbxUser.Text = ""
+            End If
             MainMenu.Show()
-            Me.Hide()
+            Hide()
         End If
         ReadFile()
     End Sub

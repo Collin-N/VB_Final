@@ -227,6 +227,7 @@ Partial Class HorseRacing
         Me.lblMoney.Name = "lblMoney"
         Me.lblMoney.Size = New System.Drawing.Size(72, 19)
         Me.lblMoney.TabIndex = 4
+        Me.lblMoney.Text = "50.0"
         '
         'Label2
         '
@@ -252,6 +253,7 @@ Partial Class HorseRacing
         Me.txtBet.Name = "txtBet"
         Me.txtBet.Size = New System.Drawing.Size(72, 20)
         Me.txtBet.TabIndex = 1
+        Me.txtBet.Text = "0.00"
         '
         'GroupBox2
         '
